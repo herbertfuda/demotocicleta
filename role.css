@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/*------------- Parte principal -------------*/
+main{
+    background-color: #171717;
+}
+/*-------------------- Faixa de título --------*/
+.faixa-titulo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article-titulo{
+    max-width: 100vw;
+    min-height: 30vh;
+    padding: 100px;
+    border-bottom: 1px solid #cc0000;
+
+}
+.article-titulo > h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    padding: 20px 0;
+}
+.article-titulo p{
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+}
+/* ------------- Conteúdo principal ----------------*/
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    min-height: 90vh;
+    padding: 50px 10px;/* Erro de barra rolagem horizontal*/
+    background-color: white;
+}
+hr{
+    margin: 50px auto 10px;
+    width: 90vw;
+    color: #999999;
+}
+.ano{
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    font-size: 26px;
+    text-shadow: 0px 0px 6px rgba(199, 199, 199, 0.5);
+}
+.box{
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    margin: 10px;
+    padding: 14px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1);
+}
+.box > img{
+    max-width: 272px;
+    max-height: 153px;
+    border-radius: 5px;
+}
+.box:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.box > h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #cc0000;
+    margin: 5px 0;
+    text-transform:uppercase;
+}
+.box > span{
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.box > p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.botao{
+    position: absolute;
+    width: 272px;
+    bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #cc0000;
+    text-align: center;
+    text-decoration: none;
+    color: #cc0000;
+    font-weight: 400;
+}
+.botao:hover{
+    background-color: #DC3408;
+    color: white;
+    border: 1px solid #DC3408;
+    transition: 0.7s ease-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo > a{
+        display: block;
+        font-size: 30px;
+    }
+    .navbar a {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    .dropdown .dropbtn {
+        font-size: 12px;  
+        padding: 10px 5px;
+      }
+    .titulo{
+        margin: 0 0 50px 10px;
+    }
+    .titulo > h1{
+        font-size: 40px;
+    }
+    .article-titulo{
+        padding: 100px 20px;
+    
+    }
+}
+@media only screen and (max-width: 425px) {
+    .menu-principal{
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/*------------- Parte principal -------------*/
+main{
+    background-color: white;
+    padding-bottom: 50px;
+}
+/*---------------Conteúdo----------------*/
+.conteudo-principal{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #171717;
+}
+.conteudo-principal h2{
+    font-size: 26px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    padding: 10px 0px; 
+}
+.conteudo-principal a{
+    text-decoration: none;
+    color: #cc0000;
+    font-weight: 400;
+}
+.conteudo-principal a:hover{
+    color: #DC3408;
+}
+article h1{
+    padding: 50px 10px 20px 10px;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+article p{
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.box-esquerdo{
+    padding: 10px;
+}
+.box-esquerdo img{
+    float: left;
+    max-width: 100%;
+    max-height: 500px;
+    margin-right: 30px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.box-direito{
+    padding: 10px;
+}
+.box-direito img{
+    float: right;
+    max-width: 100%;
+    max-height: 500px;
+    margin-left: 30px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+
+}
+.box-esquerdo::after, .box-direito::after, .video::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.video{
+    padding: 10px;
+}
+.video iframe{
+    float: left;
+    width: 560px;
+    height: 315px;
+    margin-right: 30px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .logo > a{
+        display: block;
+        font-size: 30px;
+    }
+    .navbar a {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    .dropdown .dropbtn {
+        font-size: 12px;  
+        padding: 10px 5px;
+      }
+    .titulo{
+        margin: 0 0 50px 10px;
+    }
+    .titulo > h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .menu-principal{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box-esquerdo img, .box-direito img{
+        float: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .video iframe{
+        float: none;
+        width: 300px;
+        height: 168px;
+        margin: 0px;
+        padding: 0px;
+    }
+}
