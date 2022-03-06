@@ -132,9 +132,6 @@ strong{
 .topo{
     display: flex;
     align-items: flex-end;
-    /*Colocando imagem de fundo e criando uma mascara*/
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('imagens/capa.jpg');
-    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -187,14 +184,18 @@ dt{
     font-size: 20px;
 }
 dd{
+    font-weight: 200;
     margin-bottom: 5px;
     text-indent: 5px;
 }
 dd > a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     font-family: var(--roboto);
     font-size: 16px;
+}
+dd > a:hover{
+    color: var(--branco);
 }
 footer p{
     width: 100%;
@@ -202,7 +203,7 @@ footer p{
     font-size: 14px;
     font-family: var(--roboto);
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.3);
     padding: 15px;
 }
 
@@ -210,7 +211,5 @@ footer p{
 
 .fa-brands{
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
 }
-
-
