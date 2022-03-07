@@ -40,6 +40,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width: 100vw;
     min-height: 90vh;
     padding: 50px 10px;/* Erro de barra rolagem horizontal*/
@@ -117,6 +118,9 @@ hr{
 }
 
 @media only screen and (max-width: 768px) {
+    .conteudo{
+        justify-content: center;
+    }
     .logo > a{
         display: block;
         font-size: 30px;
