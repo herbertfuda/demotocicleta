@@ -133,7 +133,7 @@ main{
         margin-bottom: 50px;
 
     }
-    img{
+    .box > img{
         border-radius: 10px 10px 0 0;
     }
 }
@@ -142,7 +142,7 @@ main{
         max-width: 300px;
         margin-bottom: 50px;
     }
-    img{
+    .box > img{
         max-width: 300px;
         border-radius: 10px 10px 0 0;
     }
