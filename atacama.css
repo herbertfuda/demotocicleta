@@ -7,7 +7,7 @@ main{
 .topo{
     /*Colocando imagem de fundo e criando uma mascara*/
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('imagens/capa-atacama.jpg');
-    background-position: center center;
+    background-position: bottom center;
     }
 /*---------------Conteúdo----------------*/
 .conteudo-principal{
